@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import style from './MealAvability.module.css';
-import Card from '../../Card/Card.js';
+
 import Mealitem from './Mealitem.js/Mealitem.js';
 
 const DUMMY_MEALS = [
@@ -35,14 +35,14 @@ const DUMMY_MEALS = [
     
     
  return <div className={style.meals}>
-        <Card>
+        
         <ul>
        { DUMMY_MEALS.map(meal=>
         <Mealitem key={meal.id} name={meal.name} description={meal.description} price={meal.price}></Mealitem>
         )}
         </ul>
         
-        </Card>
+        
     
        
     </div>
